@@ -1,0 +1,533 @@
+-- ******** Model variables ***************************************************
+
+group "Model Root"
+{
+ flags: COLLAPSED
+}
+	group "Constant" -- block-group
+	{
+	 block: "Constant"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		-- Skipping output Out1
+		p_1_pwm_teste_real_T_0[3]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Value"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Constant"
+
+	group "Constant1" -- block-group
+	{
+	 block: "Constant"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		-- Skipping output Out1
+		p_1_pwm_teste_real_T_0[13]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Value"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Constant1"
+
+	group "Constant3" -- block-group
+	{
+	 block: "Constant"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		-- Skipping output Out1
+		p_1_pwm_teste_real_T_0[1]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Value"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Constant3"
+
+	group "Constant7" -- block-group
+	{
+	 block: "Constant"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		-- Skipping output Out1
+		p_1_pwm_teste_real_T_0[5]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Value"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Constant7"
+
+	group "Constant8" -- block-group
+	{
+	 block: "Constant"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		-- Skipping output Out1
+		p_1_pwm_teste_real_T_0[8]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Value"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Constant8"
+
+	group "Constant9" -- block-group
+	{
+	 block: "Constant"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		-- Skipping output Out1
+		p_1_pwm_teste_real_T_0[11]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Value"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Constant9"
+
+	group "Phi" -- block-group
+	{
+	 block: "Constant"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		-- Skipping output Out1
+		p_1_pwm_teste_real_T_0[0]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Value"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Phi"
+
+	group "Theta" -- block-group
+	{
+	 block: "Constant"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		-- Skipping output Out1
+		p_1_pwm_teste_real_T_0[7]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Value"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Theta"
+
+	group "dPhi" -- block-group
+	{
+	 block: "Constant"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		-- Skipping output Out1
+		p_1_pwm_teste_real_T_0[4]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Value"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "dPhi"
+
+	group "dTheta" -- block-group
+	{
+	 block: "Constant"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		-- Skipping output Out1
+		p_1_pwm_teste_real_T_0[10]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Value"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "dTheta"
+
+	group "Gain3" -- block-group
+	{
+	 block: "Gain"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_0_pwm_teste_real_T_0[14]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+		p_1_pwm_teste_real_T_0[14]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Gain"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Gain3"
+
+	group "Gain4" -- block-group
+	{
+	 block: "Gain"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_0_pwm_teste_real_T_0[1]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+		p_1_pwm_teste_real_T_0[2]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Gain"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Gain4"
+
+	group "Gain5" -- block-group
+	{
+	 block: "Gain"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_0_pwm_teste_real_T_0[4]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+		p_1_pwm_teste_real_T_0[6]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Gain"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Gain5"
+
+	group "Gain6" -- block-group
+	{
+	 block: "Gain"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_0_pwm_teste_real_T_0[7]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+		p_1_pwm_teste_real_T_0[9]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Gain"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Gain6"
+
+	group "Gain7" -- block-group
+	{
+	 block: "Gain"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_0_pwm_teste_real_T_0[10]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+		p_1_pwm_teste_real_T_0[12]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Gain"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Gain7"
+
+	group "Divide" -- block-group
+	{
+	 block: "Product"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_0_pwm_teste_real_T_0[2]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+
+
+	endgroup -- block-group "Divide"
+
+	group "Divide1" -- block-group
+	{
+	 block: "Product"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_0_pwm_teste_real_T_0[5]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+
+
+	endgroup -- block-group "Divide1"
+
+	group "Divide2" -- block-group
+	{
+	 block: "Product"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_0_pwm_teste_real_T_0[8]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+
+
+	endgroup -- block-group "Divide2"
+
+	group "Divide3" -- block-group
+	{
+	 block: "Product"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_0_pwm_teste_real_T_0[11]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+
+
+	endgroup -- block-group "Divide3"
+
+	group "Sum" -- block-group
+	{
+	 block: "Sum"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_0_pwm_teste_real_T_0[15]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+
+
+	endgroup -- block-group "Sum"
+
+	group "Sum2" -- block-group
+	{
+	 block: "Sum"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_0_pwm_teste_real_T_0[0]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+
+
+	endgroup -- block-group "Sum2"
+
+	group "Sum3" -- block-group
+	{
+	 block: "Sum"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_0_pwm_teste_real_T_0[3]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+
+
+	endgroup -- block-group "Sum3"
+
+	group "Sum6" -- block-group
+	{
+	 block: "Sum"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_0_pwm_teste_real_T_0[6]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+
+
+	endgroup -- block-group "Sum6"
+
+	group "Sum7" -- block-group
+	{
+	 block: "Sum"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_0_pwm_teste_real_T_0[9]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+
+
+	endgroup -- block-group "Sum7"
+
+  
+  
+	group "DS2202DIO_SETUP_B1" -- subsystem-group
+	{
+	 flags: COLLAPSED
+	 desc:  ""
+	}
+
+
+	endgroup -- subsystem-group "DS2202DIO_SETUP_B1"
+  
+  
+	group "DS2202PWM2D_B1_C1" -- subsystem-group
+	{
+	 flags: COLLAPSED
+	 desc:  ""
+	}
+
+		p_0_pwm_teste_real_T_0[12]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Duty Cycle"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+		p_0_pwm_teste_real_T_0[13]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Period"
+		 desc:    "No data (unused channel) "
+		 flags:   OUTPUT|READONLY
+		}
+
+	endgroup -- subsystem-group "DS2202PWM2D_B1_C1"
+  
+  
+	group "DS2202PWM_B1_C1" -- subsystem-group
+	{
+	 flags: COLLAPSED
+	 desc:  ""
+	}
+
+
+	endgroup -- subsystem-group "DS2202PWM_B1_C1"
+  
+  
+	group "DS2202PWM_B1_C2" -- subsystem-group
+	{
+	 flags: COLLAPSED
+	 desc:  ""
+	}
+
+
+	endgroup -- subsystem-group "DS2202PWM_B1_C2"
+  
+  
+	group "DS2202PWM_B1_C3" -- subsystem-group
+	{
+	 flags: COLLAPSED
+	 desc:  ""
+	}
+
+
+	endgroup -- subsystem-group "DS2202PWM_B1_C3"
+  
+  
+	group "DS2202PWM_B1_C4" -- subsystem-group
+	{
+	 flags: COLLAPSED
+	 desc:  ""
+	}
+
+
+	endgroup -- subsystem-group "DS2202PWM_B1_C4"
+  
+  
+	group "RTI Data" -- subsystem-group
+	{
+	 flags: COLLAPSED
+	 desc:  ""
+	}
+
+
+	endgroup -- subsystem-group "RTI Data"
+
+
+
+
+endgroup -- "Model Root"

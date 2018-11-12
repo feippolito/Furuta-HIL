@@ -1,0 +1,1760 @@
+-- ****************************************************************************
+--
+--  Trace file: Furuta_Model.trc
+--
+--  RTI1006 7.3 (02-Nov-2014)
+--  Tue Nov 06 13:55:40 2018
+--
+--  Used options:
+--    TRCGenerateVirtualBlocks      = 0
+--    TRCGenerateLabels             = 0
+--    TRCGenerateStates             = 0
+--    TRCGenerateDerivatives        = 0
+--    TRCGenerateParamValues        = 0
+--    TRCGenerateApplicationKeyword = 0
+--    TRCOnlyGlobals                = 0
+--    TRCIsOmitVdOn                 = 0
+--
+--  Trace file format: 2
+--
+--  (c) Copyright 2008, dSPACE GmbH. All rights reserved.
+--
+-- ****************************************************************************
+
+-- ******** Keywords **********************************************************
+
+-- _application "Furuta_Model.map"
+
+_genname     "RTI"
+_genversion  "7.3"
+_gendate     "11/06/2018 13:55:43"
+_description ""
+_author      "RTI1006 7.3 (02-Nov-2014)"
+_model       "Furuta_Model.mdl"
+
+-- Default data type formats
+_floating_point_type(64,IEEE)
+_integer_type(32)
+
+-- No Data Capture blocks within model: use base sample time as sampling period
+sampling_period[0]
+{
+  value:       0.0001
+  alias:       "HostService"
+  increment:   0.0001
+  unit:        "s"
+}
+
+
+
+-- Type definitions for arrays
+typedef Furuta_Model_ArrayDT8_100000 uint(8)[100000]
+
+
+-- ******** Simulation control variables **************************************
+
+finalTime
+{
+ type:  flt(64,IEEE)*
+ alias: "finalTime"
+ desc:  "Simulation stop time. When reached, simState switches to STOP."
+ flags:  SYSTEM|READONLY
+ unit:  "s"
+}
+
+currentTime
+{
+ type:  flt(64,IEEE)*
+ alias: "currentTime"
+ desc:  "Current simulation time. Increments with execution of Timer Task 1."
+ flags: SYSTEM|READONLY
+ unit:  "s"
+}
+
+modelStepSize
+{
+ type:  flt(64,IEEE)
+ alias: "modelStepSize"
+ desc:  "Fixed step size of the model, sample time of Timer Task 1."
+ flags: SYSTEM|READONLY
+ unit:  "s"
+}
+
+simState
+{
+ type:  int(32)
+ alias: "simState"
+ desc:  "Simulation state: STOP=0 PAUSE=1 RUN=2"
+ flags: SYSTEM
+ unit:  "-"
+}
+
+msg_last_error_no
+{
+ type:  uint(32)
+ alias: "errorNumber"
+ desc:  "Error number of last error message (zero if no error)."
+ unit:  "-"
+ flags: SYSTEM|READONLY
+}
+
+rtiAssertionMode
+{
+ type:  int(32)
+ alias: "rtiAssertionMode"
+ desc:  "Assertion Mode: OFF=0 WARN=1 STOP=2"
+ flags: SYSTEM
+ unit:  "-"
+}
+
+
+
+-- ******** Model variables ***************************************************
+
+group "Model Root"
+{
+ flags: COLLAPSED
+}
+	group "Constant1" -- block-group
+	{
+	 block: "Constant"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		-- Skipping output Out1
+		p_1_Furuta_Model_real_T_0[6]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Value"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Constant1"
+
+	group "Constant10" -- block-group
+	{
+	 block: "Constant"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		-- Skipping output Out1
+		p_1_Furuta_Model_real_T_0[11]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Value"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Constant10"
+
+	group "Constant11" -- block-group
+	{
+	 block: "Constant"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		-- Skipping output Out1
+		p_1_Furuta_Model_real_T_0[30]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Value"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Constant11"
+
+	group "Constant12" -- block-group
+	{
+	 block: "Constant"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		-- Skipping output Out1
+		p_1_Furuta_Model_boolean_T_1[3]
+		{
+		 type:    uint(8)*
+		 alias:   "Value"
+		 range:   < 0 ; 1 >
+		 bitmask: 0x01
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Constant12"
+
+	group "Constant3" -- block-group
+	{
+	 block: "Constant"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		-- Skipping output Out1
+		p_1_Furuta_Model_real_T_0[9]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Value"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Constant3"
+
+	group "Constant5" -- block-group
+	{
+	 block: "Constant"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		-- Skipping output Out1
+		p_1_Furuta_Model_real_T_0[4]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Value"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Constant5"
+
+	group "Constant7" -- block-group
+	{
+	 block: "Constant"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		-- Skipping output Out1
+		p_1_Furuta_Model_real_T_0[13]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Value"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Constant7"
+
+	group "Constant8" -- block-group
+	{
+	 block: "Constant"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		-- Skipping output Out1
+		p_1_Furuta_Model_real_T_0[15]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Value"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Constant8"
+
+	group "Constant9" -- block-group
+	{
+	 block: "Constant"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		-- Skipping output Out1
+		p_1_Furuta_Model_real_T_0[18]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Value"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Constant9"
+
+	group "Control" -- block-group
+	{
+	 block: "Constant"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		-- Skipping output Out1
+		p_1_Furuta_Model_real_T_0[7]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Value"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Control"
+
+	group "Delay Lenght" -- block-group
+	{
+	 block: "Constant"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		-- Skipping output Out1
+		p_1_Furuta_Model_real_T_0[20]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Value"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Delay Lenght"
+
+	group "Gain1" -- block-group
+	{
+	 block: "Gain"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_0_Furuta_Model_real_T_0[16]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+		p_1_Furuta_Model_real_T_0[21]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Gain"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Gain1"
+
+	group "Gain2" -- block-group
+	{
+	 block: "Gain"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_0_Furuta_Model_real_T_0[25]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+		p_1_Furuta_Model_real_T_0[23]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Gain"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Gain2"
+
+	group "Gain3" -- block-group
+	{
+	 block: "Gain"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_0_Furuta_Model_real_T_0[43]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+		p_1_Furuta_Model_real_T_0[5]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Gain"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Gain3"
+
+	group "Gain4" -- block-group
+	{
+	 block: "Gain"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_0_Furuta_Model_real_T_0[2]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+		p_1_Furuta_Model_real_T_0[10]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Gain"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Gain4"
+
+	group "Gain5" -- block-group
+	{
+	 block: "Gain"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_0_Furuta_Model_real_T_0[6]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+		p_1_Furuta_Model_real_T_0[14]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Gain"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Gain5"
+
+	group "Gain6" -- block-group
+	{
+	 block: "Gain"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_0_Furuta_Model_real_T_0[10]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+		p_1_Furuta_Model_real_T_0[16]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Gain"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Gain6"
+
+	group "Gain7" -- block-group
+	{
+	 block: "Gain"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_0_Furuta_Model_real_T_0[14]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+		p_1_Furuta_Model_real_T_0[19]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Gain"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Gain7"
+
+	group "Gain8" -- block-group
+	{
+	 block: "Gain"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_0_Furuta_Model_real_T_0[41]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+		p_1_Furuta_Model_real_T_0[31]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Gain"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Gain8"
+
+	group "Gain9" -- block-group
+	{
+	 block: "Gain"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_0_Furuta_Model_real_T_0[26]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+		p_1_Furuta_Model_real_T_0[24]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Gain"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Gain9"
+
+	group "Phi" -- block-group
+	{
+	 block: "Gain"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_0_Furuta_Model_real_T_0[35]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+		p_1_Furuta_Model_real_T_0[26]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Gain"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Phi"
+
+	group "Theta" -- block-group
+	{
+	 block: "Gain"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_0_Furuta_Model_real_T_0[38]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+		p_1_Furuta_Model_real_T_0[29]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Gain"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Theta"
+
+	group "Logical\nOperator" -- block-group
+	{
+	 block: "Logic"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_0_Furuta_Model_boolean_T_1[1]
+		{
+		 type:    uint(8)*
+		 alias:   "Out1"
+		 desc:    ""
+		 range:   < 0 ; 1 >
+		 bitmask: 0x01
+		 flags:   OUTPUT|READONLY
+		}
+
+
+	endgroup -- block-group "Logical\nOperator"
+
+	group "Divide" -- block-group
+	{
+	 block: "Product"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_0_Furuta_Model_real_T_0[3]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+
+
+	endgroup -- block-group "Divide"
+
+	group "Divide1" -- block-group
+	{
+	 block: "Product"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_0_Furuta_Model_real_T_0[7]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+
+
+	endgroup -- block-group "Divide1"
+
+	group "Divide2" -- block-group
+	{
+	 block: "Product"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_0_Furuta_Model_real_T_0[11]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+
+
+	endgroup -- block-group "Divide2"
+
+	group "Divide3" -- block-group
+	{
+	 block: "Product"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_0_Furuta_Model_real_T_0[15]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+
+
+	endgroup -- block-group "Divide3"
+
+	group "Scope3" -- block-group
+	{
+	 block: "Scope"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_0_Furuta_Model_boolean_T_1[0]
+		{
+		 type:    uint(8)*
+		 alias:   "In1{SubArray1}"
+		 desc:    ""
+		 range:   < 0 ; 1 >
+		 bitmask: 0x01
+		 flags:   SINK|READONLY
+		}
+		p_0_Furuta_Model_boolean_T_1[2]
+		{
+		 type:    uint(8)*
+		 alias:   "In1{SubArray2}"
+		 desc:    ""
+		 range:   < 0 ; 1 >
+		 bitmask: 0x01
+		 flags:   SINK|READONLY
+		}
+
+
+
+	endgroup -- block-group "Scope3"
+
+	group "Sum" -- block-group
+	{
+	 block: "Sum"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_0_Furuta_Model_real_T_0[44]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+
+
+	endgroup -- block-group "Sum"
+
+	group "Sum2" -- block-group
+	{
+	 block: "Sum"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_0_Furuta_Model_real_T_0[1]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+
+
+	endgroup -- block-group "Sum2"
+
+	group "Sum3" -- block-group
+	{
+	 block: "Sum"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_0_Furuta_Model_real_T_0[5]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+
+
+	endgroup -- block-group "Sum3"
+
+	group "Sum6" -- block-group
+	{
+	 block: "Sum"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_0_Furuta_Model_real_T_0[9]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+
+
+	endgroup -- block-group "Sum6"
+
+	group "Sum7" -- block-group
+	{
+	 block: "Sum"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_0_Furuta_Model_real_T_0[13]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+
+
+	endgroup -- block-group "Sum7"
+
+	group "Sum8" -- block-group
+	{
+	 block: "Sum"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_0_Furuta_Model_real_T_0[42]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+
+
+	endgroup -- block-group "Sum8"
+
+	group "Switch" -- block-group
+	{
+	 block: "Switch"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_0_Furuta_Model_real_T_0[21]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+		p_1_Furuta_Model_real_T_0[22]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Threshold"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Switch"
+
+	group "Delay2" -- block-group
+	{
+	 block: "Delay"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_0_Furuta_Model_boolean_T_1[2]
+		{
+		 type:    uint(8)*
+		 alias:   "Out1"
+		 desc:    ""
+		 range:   < 0 ; 1 >
+		 bitmask: 0x01
+		 flags:   OUTPUT|READONLY
+		}
+		p_1_Furuta_Model_boolean_T_1[2]
+		{
+		 type:    uint(8)*
+		 alias:   "InitialCondition"
+		 range:   < 0 ; 1 >
+		 bitmask: 0x01
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Delay2"
+
+  
+  
+	group "D Flip-Flop" -- subsystem-group
+	{
+	 flags: COLLAPSED
+	 desc:  ""
+	}
+
+		p_0_Furuta_Model_boolean_T_1[4]
+		{
+		 type:    uint(8)*
+		 alias:   "Q"
+		 desc:    ""
+		 range:   < 0 ; 1 >
+		 bitmask: 0x01
+		 flags:   OUTPUT|READONLY
+		}
+		p_0_Furuta_Model_boolean_T_1[5]
+		{
+		 type:    uint(8)*
+		 alias:   "!Q"
+		 desc:    ""
+		 range:   < 0 ; 1 >
+		 bitmask: 0x01
+		 flags:   OUTPUT|READONLY
+		}
+
+  
+  
+		group "D Flip-Flop" -- subsystem-group
+		{
+		 flags: COLLAPSED
+		 desc:  ""
+		}
+
+			p_0_Furuta_Model_boolean_T_1[4]
+			{
+			 type:    uint(8)*
+			 alias:   "Q"
+			 desc:    ""
+			 range:   < 0 ; 1 >
+			 bitmask: 0x01
+			 flags:   OUTPUT|READONLY
+			}
+			p_0_Furuta_Model_boolean_T_1[5]
+			{
+			 type:    uint(8)*
+			 alias:   "!Q"
+			 desc:    ""
+			 range:   < 0 ; 1 >
+			 bitmask: 0x01
+			 flags:   OUTPUT|READONLY
+			}
+
+			group "D" -- block-group
+			{
+			 block: "Inport"
+			 desc:  ""
+			 flags: BLOCK|COLLAPSED
+			}
+				p_0_Furuta_Model_boolean_T_1[4]
+				{
+				 type:    uint(8)*
+				 alias:   "Out1"
+				 desc:    ""
+				 range:   < 0 ; 1 >
+				 bitmask: 0x01
+				 flags:   OUTPUT|READONLY
+				}
+
+
+			endgroup -- block-group "D"
+
+			group "Logic" -- block-group
+			{
+			 block: "Logic"
+			 desc:  ""
+			 flags: BLOCK|COLLAPSED
+			}
+				p_0_Furuta_Model_boolean_T_1[5]
+				{
+				 type:    uint(8)*
+				 alias:   "Out1"
+				 desc:    ""
+				 range:   < 0 ; 1 >
+				 bitmask: 0x01
+				 flags:   OUTPUT|READONLY
+				}
+
+
+			endgroup -- block-group "Logic"
+
+
+
+		endgroup -- subsystem-group "D Flip-Flop"
+
+
+	endgroup -- subsystem-group "D Flip-Flop"
+  
+  
+	group "DS2202BIT_IN_B1_C1" -- subsystem-group
+	{
+	 flags: COLLAPSED
+	 desc:  ""
+	}
+
+		p_0_Furuta_Model_boolean_T_1[0]
+		{
+		 type:    uint(8)*
+		 alias:   "BITCH_out"
+		 desc:    ""
+		 range:   < 0 ; 1 >
+		 bitmask: 0x01
+		 flags:   OUTPUT|READONLY
+		}
+
+	endgroup -- subsystem-group "DS2202BIT_IN_B1_C1"
+  
+  
+	group "DS2202DIO_SETUP_B1" -- subsystem-group
+	{
+	 flags: COLLAPSED
+	 desc:  ""
+	}
+
+
+	endgroup -- subsystem-group "DS2202DIO_SETUP_B1"
+  
+  
+	group "DS2202PWM2D_B1_C1" -- subsystem-group
+	{
+	 flags: COLLAPSED
+	 desc:  ""
+	}
+
+		p_0_Furuta_Model_real_T_0[17]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Duty Cycle"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+		p_0_Furuta_Model_real_T_0[18]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Period"
+		 desc:    "No data (unused channel) "
+		 flags:   OUTPUT|READONLY
+		}
+
+	endgroup -- subsystem-group "DS2202PWM2D_B1_C1"
+  
+  
+	group "DS2202PWM2D_B1_C2" -- subsystem-group
+	{
+	 flags: COLLAPSED
+	 desc:  ""
+	}
+
+		p_0_Furuta_Model_real_T_0[39]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Duty Cycle"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+		p_0_Furuta_Model_real_T_0[40]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Period"
+		 desc:    "No data (unused channel) "
+		 flags:   OUTPUT|READONLY
+		}
+
+	endgroup -- subsystem-group "DS2202PWM2D_B1_C2"
+  
+  
+	group "DS2202PWM_B1_C1" -- subsystem-group
+	{
+	 flags: COLLAPSED
+	 desc:  ""
+	}
+
+
+	endgroup -- subsystem-group "DS2202PWM_B1_C1"
+  
+  
+	group "DS2202PWM_B1_C2" -- subsystem-group
+	{
+	 flags: COLLAPSED
+	 desc:  ""
+	}
+
+
+	endgroup -- subsystem-group "DS2202PWM_B1_C2"
+  
+  
+	group "DS2202PWM_B1_C3" -- subsystem-group
+	{
+	 flags: COLLAPSED
+	 desc:  ""
+	}
+
+
+	endgroup -- subsystem-group "DS2202PWM_B1_C3"
+  
+  
+	group "DS2202PWM_B1_C4" -- subsystem-group
+	{
+	 flags: COLLAPSED
+	 desc:  ""
+	}
+
+
+	endgroup -- subsystem-group "DS2202PWM_B1_C4"
+  
+  
+	group "Furuta Model\n" -- subsystem-group
+	{
+	 flags: COLLAPSED
+	 desc:  ""
+	}
+
+		p_0_Furuta_Model_real_T_0[0]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Phi."
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+		p_0_Furuta_Model_real_T_0[4]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "dPhi."
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+		p_0_Furuta_Model_real_T_0[8]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Theta."
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+		p_0_Furuta_Model_real_T_0[12]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "dTheta."
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+
+		group "DenPhi" -- block-group
+		{
+		 block: "Fcn"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_0_Furuta_Model_real_T_0[28]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+
+
+		endgroup -- block-group "DenPhi"
+
+		group "DenTheta" -- block-group
+		{
+		 block: "Fcn"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_0_Furuta_Model_real_T_0[29]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+
+
+		endgroup -- block-group "DenTheta"
+
+		group "NumPhi" -- block-group
+		{
+		 block: "Fcn"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_0_Furuta_Model_real_T_0[30]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+
+
+		endgroup -- block-group "NumPhi"
+
+		group "NumTheta" -- block-group
+		{
+		 block: "Fcn"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_0_Furuta_Model_real_T_0[32]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+
+
+		endgroup -- block-group "NumTheta"
+
+		group "Gain1" -- block-group
+		{
+		 block: "Gain"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_0_Furuta_Model_real_T_0[20]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+			p_1_Furuta_Model_real_T_0[3]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Gain"
+			 flags:   PARAM
+			 origin:  "ke"
+			}
+			p_1_Furuta_Model_real_T_0[3]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Gain"
+			 flags:   PARAM
+			 origin:  "ke"
+			}
+			p_1_Furuta_Model_real_T_0[0]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Gain"
+			 flags:   PARAM
+			 origin:  "Re"
+			}
+
+
+		endgroup -- block-group "Gain1"
+
+		group "Gain2" -- block-group
+		{
+		 block: "Gain"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_0_Furuta_Model_real_T_0[24]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+			p_1_Furuta_Model_real_T_0[2]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Gain"
+			 flags:   PARAM
+			 origin:  "kb"
+			}
+
+
+		endgroup -- block-group "Gain2"
+
+		group "Gain3" -- block-group
+		{
+		 block: "Gain"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_0_Furuta_Model_real_T_0[19]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+			p_1_Furuta_Model_real_T_0[2]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Gain"
+			 flags:   PARAM
+			 origin:  "kb"
+			}
+
+
+		endgroup -- block-group "Gain3"
+
+		group "ke//Re\n" -- block-group
+		{
+		 block: "Gain"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_0_Furuta_Model_real_T_0[22]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+			p_1_Furuta_Model_real_T_0[3]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Gain"
+			 flags:   PARAM
+			 origin:  "ke"
+			}
+			p_1_Furuta_Model_real_T_0[0]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Gain"
+			 flags:   PARAM
+			 origin:  "Re"
+			}
+
+
+		endgroup -- block-group "ke//Re\n"
+
+		group "Phi" -- block-group
+		{
+		 block: "Integrator"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_0_Furuta_Model_real_T_0[0]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+			p_1_Furuta_Model_real_T_0[8]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "InitialCondition"
+			 flags:   PARAM
+			}
+
+
+		endgroup -- block-group "Phi"
+
+		group "Theta" -- block-group
+		{
+		 block: "Integrator"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_0_Furuta_Model_real_T_0[8]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+			p_1_Furuta_Model_real_T_0[1]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "InitialCondition"
+			 flags:   PARAM
+			 origin:  "initial_state"
+			}
+
+
+		endgroup -- block-group "Theta"
+
+		group "dPhi" -- block-group
+		{
+		 block: "Integrator"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_0_Furuta_Model_real_T_0[4]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+			p_1_Furuta_Model_real_T_0[12]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "InitialCondition"
+			 flags:   PARAM
+			}
+
+
+		endgroup -- block-group "dPhi"
+
+		group "dTheta" -- block-group
+		{
+		 block: "Integrator"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_0_Furuta_Model_real_T_0[12]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+			p_1_Furuta_Model_real_T_0[17]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "InitialCondition"
+			 flags:   PARAM
+			}
+
+
+		endgroup -- block-group "dTheta"
+
+		group "Divide" -- block-group
+		{
+		 block: "Product"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_0_Furuta_Model_real_T_0[31]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+
+
+		endgroup -- block-group "Divide"
+
+		group "Divide1" -- block-group
+		{
+		 block: "Product"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_0_Furuta_Model_real_T_0[33]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+
+
+		endgroup -- block-group "Divide1"
+
+		group "Sum" -- block-group
+		{
+		 block: "Sum"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_0_Furuta_Model_real_T_0[23]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+
+
+		endgroup -- block-group "Sum"
+
+		group "Sum1" -- block-group
+		{
+		 block: "Sum"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_0_Furuta_Model_real_T_0[27]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+
+
+		endgroup -- block-group "Sum1"
+
+
+
+	endgroup -- subsystem-group "Furuta Model\n"
+  
+  
+	group "RTI Data" -- subsystem-group
+	{
+	 flags: COLLAPSED
+	 desc:  ""
+	}
+
+
+	endgroup -- subsystem-group "RTI Data"
+  
+  
+	group "Rad2Grad" -- subsystem-group
+	{
+	 flags: COLLAPSED
+	 desc:  ""
+	}
+
+		p_0_Furuta_Model_real_T_0[34]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "PhiGrad"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+
+  
+  
+		group "0-2pi" -- subsystem-group
+		{
+		 flags: COLLAPSED
+		 desc:  ""
+		}
+
+			p_0_Furuta_Model_real_T_0[34]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+
+			group "2pi" -- block-group
+			{
+			 block: "Constant"
+			 desc:  ""
+			 flags: BLOCK|COLLAPSED
+			}
+				-- Skipping output Out1
+				p_1_Furuta_Model_real_T_0[25]
+				{
+				 type:    flt(64,IEEE)*
+				 alias:   "Value"
+				 flags:   PARAM
+				}
+
+
+			endgroup -- block-group "2pi"
+
+			group "Math\nFunction" -- block-group
+			{
+			 block: "Math"
+			 desc:  ""
+			 flags: BLOCK|COLLAPSED
+			}
+				p_0_Furuta_Model_real_T_0[34]
+				{
+				 type:    flt(64,IEEE)*
+				 alias:   "Out1"
+				 desc:    ""
+				 flags:   OUTPUT|READONLY
+				}
+
+
+			endgroup -- block-group "Math\nFunction"
+
+
+
+		endgroup -- subsystem-group "0-2pi"
+
+
+	endgroup -- subsystem-group "Rad2Grad"
+  
+  
+	group "Rad2Grad2" -- subsystem-group
+	{
+	 flags: COLLAPSED
+	 desc:  ""
+	}
+
+		p_0_Furuta_Model_real_T_0[37]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "ThetaGrad"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+
+  
+  
+		group "0-2pi" -- subsystem-group
+		{
+		 flags: COLLAPSED
+		 desc:  ""
+		}
+
+			p_0_Furuta_Model_real_T_0[37]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+
+			group "2pi" -- block-group
+			{
+			 block: "Constant"
+			 desc:  ""
+			 flags: BLOCK|COLLAPSED
+			}
+				-- Skipping output Out1
+				p_1_Furuta_Model_real_T_0[27]
+				{
+				 type:    flt(64,IEEE)*
+				 alias:   "Value"
+				 flags:   PARAM
+				}
+
+
+			endgroup -- block-group "2pi"
+
+			group "Constant" -- block-group
+			{
+			 block: "Constant"
+			 desc:  ""
+			 flags: BLOCK|COLLAPSED
+			}
+				-- Skipping output Out1
+				p_1_Furuta_Model_real_T_0[28]
+				{
+				 type:    flt(64,IEEE)*
+				 alias:   "Value"
+				 flags:   PARAM
+				}
+
+
+			endgroup -- block-group "Constant"
+
+			group "Math\nFunction" -- block-group
+			{
+			 block: "Math"
+			 desc:  ""
+			 flags: BLOCK|COLLAPSED
+			}
+				p_0_Furuta_Model_real_T_0[37]
+				{
+				 type:    flt(64,IEEE)*
+				 alias:   "Out1"
+				 desc:    ""
+				 flags:   OUTPUT|READONLY
+				}
+
+
+			endgroup -- block-group "Math\nFunction"
+
+			group "Add" -- block-group
+			{
+			 block: "Sum"
+			 desc:  ""
+			 flags: BLOCK|COLLAPSED
+			}
+				p_0_Furuta_Model_real_T_0[36]
+				{
+				 type:    flt(64,IEEE)*
+				 alias:   "Out1"
+				 desc:    ""
+				 flags:   OUTPUT|READONLY
+				}
+
+
+			endgroup -- block-group "Add"
+
+
+
+		endgroup -- subsystem-group "0-2pi"
+
+
+	endgroup -- subsystem-group "Rad2Grad2"
+
+
+
+
+endgroup -- "Model Root"
+-- ******** Tunable Parameters ************************************************
+
+group "Tunable Parameters"
+{
+ flags: COLLAPSED
+}
+
+	p_1_Furuta_Model_real_T_0[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "Re"
+	 flags:   PARAM
+	}
+	p_1_Furuta_Model_real_T_0[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "initial_state"
+	 flags:   PARAM
+	}
+	p_1_Furuta_Model_real_T_0[2]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "kb"
+	 flags:   PARAM
+	}
+	p_1_Furuta_Model_real_T_0[3]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "ke"
+	 flags:   PARAM
+	}
+
+endgroup
+
+
+-- ******** State Machine Data ************************************************
+
+-- No Stateflow chart within the model.
+
+
+-- ******** Data Store Memories ***********************************************
+
+-- No Data Store Memories within the model.
+
+
+-- ******** Labels ************************************************************
+
+-- Generation of labels turned off with TRCGenerateLabels option.
+
+-- ******** RTT Dynamic Variables *********************************************
+
+group "RTT Dynamic Variables"
+{
+ flags: COLLAPSED
+}
+
+endgroup
+
+-- ******** User variables from model_usr.trc *********************************
+
+-- RTI_USR_TRC_BEGIN
+
+-- No user file Furuta_Model_usr.trc found.
+
+-- RTI_USR_TRC_END
+-- ******** Task Information variables ****************************************
+
+group "Task Info"
+{
+ flags: COLLAPSED
+}
+  group "Timer Task 1"
+  {
+   flags: COLLAPSED
+  }
+
+  pRti_TIMERA_STime
+  {
+   type:  flt(64,IEEE)*
+   alias: "sampleTime"
+   flags: SYSTEM|READONLY
+  }
+  pRti_TIMERA_TTime
+  {
+   type:  flt(64,IEEE)*
+   alias: "turnaroundTime"
+   flags: SYSTEM|READONLY
+  }
+  pRti_TIMERA_TState
+  {
+   type:  int(32)*
+   alias: "state"
+   flags: SYSTEM|READONLY
+  }
+  pRti_TIMERA_OType
+  {
+   type:  int(32)*
+   alias: "overrunCheckType"
+   flags: SYSTEM|READONLY
+  }
+  pRti_TIMERA_OMax
+  {
+   type:  int(32)*
+   alias: "overrunQueueMax"
+   flags: SYSTEM|READONLY
+  }
+  pRti_TIMERA_ORpt
+  {
+   type:  int(32)*
+   alias: "overrunQueueCount"
+   flags: SYSTEM|READONLY
+  }
+  pRti_TIMERA_OCnt
+  {
+   type:  int(32)*
+   alias: "overrunCount"
+   flags: SYSTEM|READONLY
+  }
+  pRti_TIMERA_TCnt
+  {
+   type:  flt(64,IEEE)*
+   alias: "taskCallCount"
+   flags: SYSTEM|READONLY
+  }
+  pRti_TIMERA_Prio
+  {
+   type:  int(32)*
+   alias: "priority"
+   flags: SYSTEM|READONLY
+  }
+  endgroup
+
+
+endgroup
+
+-- ******** [EOF] *************************************************************
+
+
+

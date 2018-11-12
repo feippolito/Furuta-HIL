@@ -1,0 +1,1 @@
+-- call "C:\Program Files\dSPACE RCPHIL 2014-B\exe\x86-insmod.exe" -m -f ..\Furuta_Model.x86 > ..\Furuta_Model.map 

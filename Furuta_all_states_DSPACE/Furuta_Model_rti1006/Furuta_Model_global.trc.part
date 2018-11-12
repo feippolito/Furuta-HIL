@@ -1,0 +1,58 @@
+-- ******** Tunable Parameters ************************************************
+
+group "Tunable Parameters"
+{
+ flags: COLLAPSED
+}
+
+	p_1_Furuta_Model_real_T_0[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "Re"
+	 flags:   PARAM
+	}
+	p_1_Furuta_Model_real_T_0[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "initial_state"
+	 flags:   PARAM
+	}
+	p_1_Furuta_Model_real_T_0[2]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "kb"
+	 flags:   PARAM
+	}
+	p_1_Furuta_Model_real_T_0[3]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "ke"
+	 flags:   PARAM
+	}
+
+endgroup
+
+
+-- ******** State Machine Data ************************************************
+
+-- No Stateflow chart within the model.
+
+
+-- ******** Data Store Memories ***********************************************
+
+-- No Data Store Memories within the model.
+
+
+-- ******** Labels ************************************************************
+
+-- Generation of labels turned off with TRCGenerateLabels option.
+
+-- ******** RTT Dynamic Variables *********************************************
+
+group "RTT Dynamic Variables"
+{
+ flags: COLLAPSED
+}
+
+endgroup
+

@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Root>
+	<creator type="key">ControlDesk NG 5.3</creator>
+	<project>
+		<Creator type="key">ControlDesk NG</Creator>
+		<Name type="key">Furuta_all_states_pwm.CDP</Name>
+		<DisplayName type="key">Furuta_all_states_pwm</DisplayName>
+		<Flags type="key">4096</Flags>
+		<Type type="key">1</Type>
+		<UniqueID type="key">757791193</UniqueID>
+		<EntityID type="key">{23D45049-5D39-4EF2-99B5-89C948958405}</EntityID>
+		<ItemInfoDate type="key">26/10/2018 20:03:05</ItemInfoDate>
+		<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+		<ItemInfoDescr type="key"/>
+		<ItemInfoAddInfoDb type="key"/>
+		<ItemInfoAuthor type="key">NSEE</ItemInfoAuthor>
+		<item>
+			<Targets type="key">project</Targets>
+			<Name type="key">Furuta_all_states_pwm</Name>
+			<DisplayName type="key">Furuta_all_states_pwm</DisplayName>
+			<Path type="key">..</Path>
+			<Flags type="key">4100</Flags>
+			<Type type="key">3</Type>
+			<UniqueID type="key">253646543</UniqueID>
+			<EntityID type="key">{1EEDEB05-8EA7-477D-97A8-A19722D79074}</EntityID>
+			<ItemInfoDate type="key">26/10/2018 20:03:05</ItemInfoDate>
+			<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+			<ItemInfoDescr type="key"/>
+			<ItemInfoAddInfoDb type="key"/>
+			<ItemInfoAuthor type="key">NSEE</ItemInfoAuthor>
+			<item>
+				<Docs type="key">.doc,.docx,.pdf</Docs>
+				<Name type="key">Specifications</Name>
+				<DisplayName type="key">Specifications</DisplayName>
+				<Path type="key">.</Path>
+				<Type type="key">3</Type>
+				<UniqueID type="key">79519629</UniqueID>
+				<EntityID type="key">{2F337710-67D7-472A-97FE-95521A749D87}</EntityID>
+				<ItemInfoDate type="key">26/10/2018 20:03:05</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDocs type="key">.doc,.docx,.pdf</ItemInfoDocs>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAddInfoDb type="key"/>
+				<ItemInfoAuthor type="key">NSEE</ItemInfoAuthor>
+			</item>
+			<item>
+				<Docs type="key">.mpp</Docs>
+				<Name type="key">Project Plans</Name>
+				<DisplayName type="key">Project Plans</DisplayName>
+				<Path type="key">.</Path>
+				<Type type="key">3</Type>
+				<UniqueID type="key">615354160</UniqueID>
+				<EntityID type="key">{7C4D5BB2-BFE3-445B-8044-75E66007A6F6}</EntityID>
+				<ItemInfoDate type="key">26/10/2018 20:03:05</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDocs type="key">.mpp</ItemInfoDocs>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAddInfoDb type="key"/>
+				<ItemInfoAuthor type="key">NSEE</ItemInfoAuthor>
+			</item>
+			<item>
+				<Targets type="key">datasetmanager_global</Targets>
+				<Name type="key">Global Data Sets</Name>
+				<DisplayName type="key">Global Data Sets</DisplayName>
+				<Path type="key">.</Path>
+				<Type type="key">29</Type>
+				<UniqueID type="key">1044901860</UniqueID>
+				<EntityID type="key">{12AABA94-49B8-443A-A1CB-5B81C219BE5F}</EntityID>
+				<ItemInfoDate type="key">26/10/2018 20:03:05</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAddInfoDb type="key"/>
+				<ItemInfoAuthor type="key">NSEE</ItemInfoAuthor>
+			</item>
+			<item>
+				<Targets type="key">variablesmanagement</Targets>
+				<Name type="key">Variable Descriptions</Name>
+				<DisplayName type="key">Variable Descriptions</DisplayName>
+				<Path type="key">.</Path>
+				<Flags type="key">256</Flags>
+				<Type type="key">3</Type>
+				<UniqueID type="key">478991033</UniqueID>
+				<EntityID type="key">{BA09E7FB-8D0B-45C9-9089-E48FDD0ED5A2}</EntityID>
+				<ItemInfoDate type="key">26/10/2018 20:03:05</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAddInfoDb type="key"/>
+				<ItemInfoAuthor type="key">NSEE</ItemInfoAuthor>
+				<item>
+					<Component type="key">VariablesManagement</Component>
+					<Name type="key">Furuta_all_states_pwm.vdb</Name>
+					<DisplayName type="key">C:\Users\NSEE\Documents\Furuta\Furuta_all_states_DSPACE\Furuta_all_states_pwm\Variable Descriptions\Furuta_all_states_pwm.vdb</DisplayName>
+					<Path type="key">.\Variable Descriptions</Path>
+					<Flags type="key">276</Flags>
+					<Type type="key">18</Type>
+					<UniqueID type="key">839612201</UniqueID>
+					<EntityID type="key">{82C0581F-B7D0-4F7E-804B-EF4A40A1703E}</EntityID>
+					<ItemInfoDate type="key">26/10/2018 20:03:15</ItemInfoDate>
+					<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+					<ItemInfoDescr type="key"/>
+					<ItemInfoAddInfoDb type="key"/>
+					<ItemInfoAuthor type="key">NSEE</ItemInfoAuthor>
+				</item>
+				<item>
+					<Component type="key">VariablesManagement</Component>
+					<Name type="key">pwm_teste.sdf</Name>
+					<DisplayName type="key">pwm_teste.sdf</DisplayName>
+					<Path type="key">.\Variable Descriptions\pwm_teste.sdf</Path>
+					<Flags type="key">18688</Flags>
+					<Type type="key">7</Type>
+					<UniqueID type="key">801693029</UniqueID>
+					<EntityID type="key">{36D5302F-1B29-4062-ACFB-F44FA65DC024}</EntityID>
+					<ItemInfoDate type="key">26/10/2018 20:03:08</ItemInfoDate>
+					<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+					<ItemInfoDescr type="key"/>
+					<ItemInfoLog type="key">
+Original file added from ..\pwm_teste.sdf [2018-10-26 22:0:48 (UTC)]
+
+Variable description reloaded on 26.10.2018 20:05:56 (T:\12.01378-0\Furuta\Furuta_mbed\pwm_teste.sdf)
+Original file added from ..\pwm_teste.sdf [2018-10-26 22:5:29 (UTC)]
+
+Variable description reloaded on 26.10.2018 20:43:10 (T:\12.01378-0\Furuta\Furuta_mbed\pwm_teste.sdf)
+Original file added from ..\pwm_teste.sdf [2018-10-26 22:42:45 (UTC)]
+
+Variable description reloaded on 26.10.2018 20:48:26 (T:\12.01378-0\Furuta\Furuta_mbed\pwm_teste.sdf)
+Original file added from ..\pwm_teste.sdf [2018-10-26 22:48:0 (UTC)]
+
+Variable description reloaded on 26.10.2018 20:52:06 (T:\12.01378-0\Furuta\Furuta_mbed\pwm_teste.sdf)
+Original file added from ..\pwm_teste.sdf [2018-10-26 22:51:39 (UTC)]
+
+Variable description reloaded on 26.10.2018 21:00:39 (T:\12.01378-0\Furuta\Furuta_mbed\pwm_teste.sdf)
+Original file added from ..\pwm_teste.sdf [2018-10-26 23:0:13 (UTC)]
+
+Variable description reloaded on 26.10.2018 21:05:34 (T:\12.01378-0\Furuta\Furuta_mbed\pwm_teste.sdf)
+Original file added from ..\pwm_teste.sdf [2018-10-26 23:5:5 (UTC)]
+
+Variable description reloaded on 26.10.2018 22:00:24 (T:\12.01378-0\Furuta\Furuta_mbed\pwm_teste.sdf)
+Original file added from ..\pwm_teste.sdf [2018-10-26 23:59:57 (UTC)]
+</ItemInfoLog>
+					<ItemInfoAddInfoDb type="key"/>
+					<ItemInfoAuthor type="key">NSEE</ItemInfoAuthor>
+					<item>
+						<Component type="key">VariablesManagement</Component>
+						<Name type="key">pwm_teste.trc</Name>
+						<DisplayName type="key">pwm_teste.trc</DisplayName>
+						<Path type="key">.\Variable Descriptions\pwm_teste.sdf</Path>
+						<Flags type="key">18692</Flags>
+						<ExtendedFlags type="key">1</ExtendedFlags>
+						<Type type="key">4</Type>
+						<UniqueID type="key">793224997</UniqueID>
+						<EntityID type="key">{ACB47FD6-49D2-4375-8565-61D01B504F3E}</EntityID>
+						<ItemInfoDate type="key">26/10/2018 22:00:24</ItemInfoDate>
+						<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+						<ItemInfoDescr type="key"/>
+						<ItemInfoAddInfoDb type="key"/>
+						<ItemInfoAuthor type="key">NSEE</ItemInfoAuthor>
+					</item>
+					<item>
+						<Component type="key">VariablesManagement</Component>
+						<Name type="key">pwm_teste.map</Name>
+						<DisplayName type="key">pwm_teste.map</DisplayName>
+						<Path type="key">.\Variable Descriptions\pwm_teste.sdf</Path>
+						<Flags type="key">18692</Flags>
+						<ExtendedFlags type="key">1</ExtendedFlags>
+						<Type type="key">4</Type>
+						<UniqueID type="key">616692250</UniqueID>
+						<EntityID type="key">{3E73DA12-5A34-4A5A-9A0C-EFD6EEBB1524}</EntityID>
+						<ItemInfoDate type="key">26/10/2018 22:00:24</ItemInfoDate>
+						<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+						<ItemInfoDescr type="key"/>
+						<ItemInfoAddInfoDb type="key"/>
+						<ItemInfoAuthor type="key">NSEE</ItemInfoAuthor>
+					</item>
+					<item>
+						<Component type="key">VariablesManagement</Component>
+						<Name type="key">pwm_teste.x86</Name>
+						<DisplayName type="key">pwm_teste.x86</DisplayName>
+						<Path type="key">.\Variable Descriptions\pwm_teste.sdf</Path>
+						<Flags type="key">18692</Flags>
+						<ExtendedFlags type="key">1</ExtendedFlags>
+						<Type type="key">30</Type>
+						<UniqueID type="key">366721021</UniqueID>
+						<EntityID type="key">{E5A0769E-4BC9-439F-9383-09F1EBC1FE1F}</EntityID>
+						<ItemInfoDate type="key">26/10/2018 22:00:24</ItemInfoDate>
+						<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+						<ItemInfoDescr type="key"/>
+						<ItemInfoAddInfoDb type="key"/>
+						<ItemInfoAuthor type="key">NSEE</ItemInfoAuthor>
+					</item>
+					<item>
+						<Component type="key">VariablesManagement</Component>
+						<Name type="key">pwm_teste.trz</Name>
+						<DisplayName type="key">pwm_teste.trz</DisplayName>
+						<Path type="key">.\Variable Descriptions\pwm_teste.sdf</Path>
+						<Flags type="key">18692</Flags>
+						<ExtendedFlags type="key">1</ExtendedFlags>
+						<Type type="key">4</Type>
+						<UniqueID type="key">275732341</UniqueID>
+						<EntityID type="key">{501D25D9-9493-4FAC-9193-405E60B3E839}</EntityID>
+						<ItemInfoDate type="key">26/10/2018 22:00:24</ItemInfoDate>
+						<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+						<ItemInfoDescr type="key"/>
+						<ItemInfoAddInfoDb type="key"/>
+						<ItemInfoAuthor type="key">NSEE</ItemInfoAuthor>
+					</item>
+				</item>
+				<item>
+					<Component type="key">VariablesManagement</Component>
+					<Name type="key">furuta_model.sdf</Name>
+					<DisplayName type="key">furuta_model.sdf</DisplayName>
+					<Path type="key">.\Variable Descriptions\furuta_model.sdf</Path>
+					<Flags type="key">18704</Flags>
+					<Type type="key">7</Type>
+					<UniqueID type="key">787164062</UniqueID>
+					<EntityID type="key">{265176BD-2123-4DA6-9C01-D777BD4C7CF9}</EntityID>
+					<ItemInfoDate type="key">26/10/2018 22:28:48</ItemInfoDate>
+					<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+					<ItemInfoDescr type="key"/>
+					<ItemInfoLog type="key">
+Original file added from ..\furuta_model.sdf [2018-10-27 0:28:27 (UTC)]
+
+Variable description reloaded on 26.10.2018 22:32:58 (T:\12.01378-0\Furuta\Furuta_mbed\furuta_model.sdf)
+Original file added from ..\furuta_model.sdf [2018-10-27 0:32:30 (UTC)]
+
+Variable description reloaded on 26.10.2018 22:47:28 (T:\12.01378-0\Furuta\Furuta_mbed\furuta_model.sdf)
+Original file added from ..\furuta_model.sdf [2018-10-27 0:46:59 (UTC)]
+
+Variable description reloaded on 26.10.2018 23:33:54 (T:\12.01378-0\Furuta\Furuta_mbed\furuta_model.sdf)
+Original file added from ..\furuta_model.sdf [2018-10-27 1:33:22 (UTC)]
+
+Variable description reloaded on 30.10.2018 22:01:30 (T:\12.01378-0\Furuta\Furuta_mbed\furuta_model.sdf)
+Original file added from ..\furuta_model.sdf [2018-10-31 0:0:7 (UTC)]
+
+Variable description reloaded on 31.10.2018 16:32:50 (T:\12.01378-0\Furuta\Furuta_mbed\furuta_model.sdf)
+Original file added from ..\furuta_model.sdf [2018-10-31 18:32:7 (UTC)]
+
+Variable description reloaded on 31.10.2018 16:57:38 (T:\12.01378-0\Furuta\Furuta_mbed\furuta_model.sdf)
+Original file added from ..\furuta_model.sdf [2018-10-31 18:57:5 (UTC)]
+
+Variable description reloaded on 31.10.2018 17:17:23 (T:\12.01378-0\Furuta\Furuta_mbed\furuta_model.sdf)
+Original file added from ..\furuta_model.sdf [2018-10-31 19:16:56 (UTC)]
+
+Variable description reloaded on 31.10.2018 17:54:22 (T:\12.01378-0\Furuta\Furuta_mbed\furuta_model.sdf)
+Original file added from ..\furuta_model.sdf [2018-10-31 19:53:53 (UTC)]
+
+Variable description reloaded on 31.10.2018 18:43:38 (T:\12.01378-0\Furuta\Furuta_mbed\furuta_model.sdf)
+Original file added from ..\furuta_model.sdf [2018-10-31 20:43:11 (UTC)]
+
+Variable description reloaded on 31.10.2018 19:12:30 (T:\12.01378-0\Furuta\Furuta_mbed\furuta_model.sdf)
+Original file added from ..\furuta_model.sdf [2018-10-31 21:11:31 (UTC)]
+
+Variable description reloaded on 31.10.2018 19:16:13 (T:\12.01378-0\Furuta\Furuta_mbed\furuta_model.sdf)
+Original file added from ..\furuta_model.sdf [2018-10-31 21:15:41 (UTC)]
+
+Variable description reloaded on 31.10.2018 20:08:22 (T:\12.01378-0\Furuta\Furuta_mbed\furuta_model.sdf)
+Original file added from ..\furuta_model.sdf [2018-10-31 22:7:56 (UTC)]
+
+Variable description reloaded on 31.10.2018 20:43:25 (T:\12.01378-0\Furuta\Furuta_mbed\furuta_model.sdf)
+Original file added from ..\furuta_model.sdf [2018-10-31 22:42:51 (UTC)]
+
+Variable description reloaded on 31.10.2018 22:17:32 (T:\12.01378-0\Furuta\Furuta_mbed\furuta_model.sdf)
+Original file added from ..\furuta_model.sdf [2018-11-1 0:17:3 (UTC)]
+
+Variable description reloaded on 31.10.2018 22:24:21 (T:\12.01378-0\Furuta\Furuta_mbed\furuta_model.sdf)
+Original file added from ..\furuta_model.sdf [2018-11-1 0:23:53 (UTC)]
+
+Variable description reloaded on 31.10.2018 22:36:14 (T:\12.01378-0\Furuta\Furuta_mbed\furuta_model.sdf)
+Original file added from ..\furuta_model.sdf [2018-11-1 0:31:0 (UTC)]
+
+Variable description reloaded on 31.10.2018 22:45:35 (T:\12.01378-0\Furuta\Furuta_mbed\furuta_model.sdf)
+Original file added from ..\furuta_model.sdf [2018-11-1 0:44:57 (UTC)]
+
+Variable description reloaded on 31.10.2018 22:52:26 (T:\12.01378-0\Furuta\Furuta_mbed\furuta_model.sdf)
+Original file added from ..\furuta_model.sdf [2018-11-1 0:51:58 (UTC)]
+
+Variable description reloaded on 01.11.2018 21:09:43 (T:\12.01378-0\Furuta\Furuta_mbed\furuta_model.sdf)
+Original file added from ..\furuta_model.sdf [2018-11-1 23:9:6 (UTC)]
+
+Variable description reloaded on 01.11.2018 21:38:23 (T:\12.01378-0\Furuta\Furuta_mbed\furuta_model.sdf)
+Original file added from ..\furuta_model.sdf [2018-11-1 23:37:8 (UTC)]
+
+Variable description reloaded on 01.11.2018 21:41:37 (T:\12.01378-0\Furuta\Furuta_mbed\furuta_model.sdf)
+Original file added from ..\furuta_model.sdf [2018-11-1 23:41:1 (UTC)]
+
+Variable description reloaded on 01.11.2018 21:44:57 (T:\12.01378-0\Furuta\Furuta_mbed\furuta_model.sdf)
+Original file added from ..\furuta_model.sdf [2018-11-1 23:43:56 (UTC)]
+
+Variable description reloaded on 01.11.2018 22:05:32 (T:\12.01378-0\Furuta\Furuta_mbed\furuta_model.sdf)
+Original file added from ..\furuta_model.sdf [2018-11-2 0:4:55 (UTC)]
+
+Variable description reloaded on 01.11.2018 22:11:35 (T:\12.01378-0\Furuta\Furuta_mbed\furuta_model.sdf)
+Original file added from ..\furuta_model.sdf [2018-11-2 0:10:59 (UTC)]
+
+Variable description reloaded on 06.11.2018 13:03:14 (T:\12.01378-0\Furuta\Furuta_mbed\furuta_model.sdf)
+Original file added from ..\furuta_model.sdf [2018-11-6 15:2:45 (UTC)]
+
+Variable description reloaded on 06.11.2018 13:56:15 (T:\12.01378-0\Furuta\Furuta_mbed\furuta_model.sdf)
+Original file added from ..\furuta_model.sdf [2018-11-6 15:55:48 (UTC)]
+</ItemInfoLog>
+					<ItemInfoAddInfoDb type="key"/>
+					<ItemInfoAuthor type="key">NSEE</ItemInfoAuthor>
+					<item>
+						<Component type="key">VariablesManagement</Component>
+						<Name type="key">furuta_model.trc</Name>
+						<DisplayName type="key">furuta_model.trc</DisplayName>
+						<Path type="key">.\Variable Descriptions\furuta_model.sdf</Path>
+						<Flags type="key">18692</Flags>
+						<ExtendedFlags type="key">1</ExtendedFlags>
+						<Type type="key">4</Type>
+						<UniqueID type="key">173306048</UniqueID>
+						<EntityID type="key">{B52D7017-50C0-4C16-87DC-B3EAF4C45CE2}</EntityID>
+						<ItemInfoDate type="key">06/11/2018 13:56:15</ItemInfoDate>
+						<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+						<ItemInfoDescr type="key"/>
+						<ItemInfoAddInfoDb type="key"/>
+						<ItemInfoAuthor type="key">NSEE</ItemInfoAuthor>
+					</item>
+					<item>
+						<Component type="key">VariablesManagement</Component>
+						<Name type="key">furuta_model.map</Name>
+						<DisplayName type="key">furuta_model.map</DisplayName>
+						<Path type="key">.\Variable Descriptions\furuta_model.sdf</Path>
+						<Flags type="key">18692</Flags>
+						<ExtendedFlags type="key">1</ExtendedFlags>
+						<Type type="key">4</Type>
+						<UniqueID type="key">695156901</UniqueID>
+						<EntityID type="key">{F19A750A-3ACA-451D-9E2B-3D8EDA0D1064}</EntityID>
+						<ItemInfoDate type="key">06/11/2018 13:56:15</ItemInfoDate>
+						<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+						<ItemInfoDescr type="key"/>
+						<ItemInfoAddInfoDb type="key"/>
+						<ItemInfoAuthor type="key">NSEE</ItemInfoAuthor>
+					</item>
+					<item>
+						<Component type="key">VariablesManagement</Component>
+						<Name type="key">furuta_model.x86</Name>
+						<DisplayName type="key">furuta_model.x86</DisplayName>
+						<Path type="key">.\Variable Descriptions\furuta_model.sdf</Path>
+						<Flags type="key">18692</Flags>
+						<ExtendedFlags type="key">1</ExtendedFlags>
+						<Type type="key">30</Type>
+						<UniqueID type="key">271920183</UniqueID>
+						<EntityID type="key">{E3ADDF3D-CB1A-47D7-B14B-CA45964ED322}</EntityID>
+						<ItemInfoDate type="key">06/11/2018 13:56:15</ItemInfoDate>
+						<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+						<ItemInfoDescr type="key"/>
+						<ItemInfoAddInfoDb type="key"/>
+						<ItemInfoAuthor type="key">NSEE</ItemInfoAuthor>
+					</item>
+					<item>
+						<Component type="key">VariablesManagement</Component>
+						<Name type="key">furuta_model.trz</Name>
+						<DisplayName type="key">furuta_model.trz</DisplayName>
+						<Path type="key">.\Variable Descriptions\furuta_model.sdf</Path>
+						<Flags type="key">18692</Flags>
+						<ExtendedFlags type="key">1</ExtendedFlags>
+						<Type type="key">4</Type>
+						<UniqueID type="key">176549323</UniqueID>
+						<EntityID type="key">{63D5E5E9-DFCD-46C6-AC84-3568FAD47ABE}</EntityID>
+						<ItemInfoDate type="key">06/11/2018 13:56:15</ItemInfoDate>
+						<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+						<ItemInfoDescr type="key"/>
+						<ItemInfoAddInfoDb type="key"/>
+						<ItemInfoAuthor type="key">NSEE</ItemInfoAuthor>
+					</item>
+				</item>
+			</item>
+			<item>
+				<Targets type="key">datasetmanager</Targets>
+				<Name type="key">Data Sets</Name>
+				<DisplayName type="key">Data Sets</DisplayName>
+				<Path type="key">.</Path>
+				<Flags type="key">4</Flags>
+				<Type type="key">29</Type>
+				<UniqueID type="key">718850116</UniqueID>
+				<EntityID type="key">{4E56C30A-A454-4D39-82C7-894808EF206B}</EntityID>
+				<ItemInfoDate type="key">26/10/2018 20:03:05</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAddInfoDb type="key"/>
+				<ItemInfoAuthor type="key">NSEE</ItemInfoAuthor>
+			</item>
+			<item>
+				<Targets type="key">.vfe</Targets>
+				<Name type="key">Variable Filters</Name>
+				<DisplayName type="key">Variable Filters</DisplayName>
+				<Path type="key">.</Path>
+				<Flags type="key">2304</Flags>
+				<Type type="key">3</Type>
+				<UniqueID type="key">111017058</UniqueID>
+				<EntityID type="key">{FEE343DA-8675-4AF6-987B-C2C3CD36EEA6}</EntityID>
+				<ItemInfoDate type="key">26/10/2018 20:03:05</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAddInfoDb type="key"/>
+				<ItemInfoAuthor type="key">NSEE</ItemInfoAuthor>
+			</item>
+			<item>
+				<Targets type="key">.lab</Targets>
+				<Docs type="key">.lab,.txt</Docs>
+				<Name type="key">Label Lists</Name>
+				<DisplayName type="key">Label Lists</DisplayName>
+				<Path type="key">.</Path>
+				<Type type="key">3</Type>
+				<UniqueID type="key">256954502</UniqueID>
+				<EntityID type="key">{7A8E6FCD-5BFB-4276-934D-7E2B48244A64}</EntityID>
+				<ItemInfoDate type="key">26/10/2018 20:03:05</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDocs type="key">.lab,.txt</ItemInfoDocs>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAddInfoDb type="key"/>
+				<ItemInfoAuthor type="key">NSEE</ItemInfoAuthor>
+			</item>
+			<item>
+				<Targets type="key">devicemanagement,platformmanagement</Targets>
+				<Name type="key">Global Devices</Name>
+				<DisplayName type="key">Global Devices</DisplayName>
+				<Path type="key">.</Path>
+				<Type type="key">3</Type>
+				<UniqueID type="key">580976192</UniqueID>
+				<EntityID type="key">{29F25A7F-7989-4D51-945E-7F5B4549BD38}</EntityID>
+				<ItemInfoDate type="key">26/10/2018 20:03:05</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAddInfoDb type="key"/>
+				<ItemInfoAuthor type="key">NSEE</ItemInfoAuthor>
+			</item>
+			<item>
+				<Targets type="key">interpreter,.py</Targets>
+				<Docs type="key">.py</Docs>
+				<Name type="key">Python Scripts</Name>
+				<DisplayName type="key">Python Scripts</DisplayName>
+				<Path type="key">.</Path>
+				<ExtendedFlags type="key">128</ExtendedFlags>
+				<Type type="key">3</Type>
+				<UniqueID type="key">579915298</UniqueID>
+				<EntityID type="key">{2C2FC730-DC19-4C0E-BB36-CF5CE03E0834}</EntityID>
+				<ItemInfoDate type="key">26/10/2018 20:03:05</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDocs type="key">.py</ItemInfoDocs>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAddInfoDb type="key"/>
+				<ItemInfoAuthor type="key">NSEE</ItemInfoAuthor>
+			</item>
+			<item>
+				<Targets type="key">busnavigator,.xml</Targets>
+				<Name type="key">BusNavigator</Name>
+				<DisplayName type="key">BusNavigator</DisplayName>
+				<Path type="key">.</Path>
+				<Flags type="key">4</Flags>
+				<ExtendedFlags type="key">256</ExtendedFlags>
+				<Type type="key">3</Type>
+				<UniqueID type="key">276797547</UniqueID>
+				<EntityID type="key">{181984B4-1EFA-4DE5-A3FF-719F00D50ADB}</EntityID>
+				<ItemInfoDate type="key">26/10/2018 20:03:05</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAddInfoDb type="key"/>
+				<ItemInfoAuthor type="key">NSEE</ItemInfoAuthor>
+			</item>
+			<item>
+				<Targets type="key">signaleditor</Targets>
+				<Name type="key">Signal Description Sets</Name>
+				<DisplayName type="key">Signal Description Sets</DisplayName>
+				<Path type="key">.</Path>
+				<Type type="key">3</Type>
+				<UniqueID type="key">294678722</UniqueID>
+				<EntityID type="key">{45CD938C-7B97-4517-9355-52A0FF6AD954}</EntityID>
+				<ItemInfoDate type="key">26/10/2018 20:03:05</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAddInfoDb type="key"/>
+				<ItemInfoAuthor type="key">NSEE</ItemInfoAuthor>
+			</item>
+		</item>
+		<item>
+			<Name type="key">Events</Name>
+			<DisplayName type="key">Events</DisplayName>
+			<Path type="key">.</Path>
+			<Flags type="key">4</Flags>
+			<Type type="key">3</Type>
+			<UniqueID type="key">457847365</UniqueID>
+			<EntityID type="key">{1E3F347A-3611-4003-ABE0-79FB681CC4EF}</EntityID>
+			<ItemInfoDate type="key">26/10/2018 20:03:08</ItemInfoDate>
+			<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+			<ItemInfoDescr type="key"/>
+			<ItemInfoAddInfoDb type="key"/>
+			<ItemInfoAuthor type="key">NSEE</ItemInfoAuthor>
+			<item>
+				<Name type="key">Project.events</Name>
+				<DisplayName type="key">Project.events</DisplayName>
+				<Path type="key">.\Events</Path>
+				<Flags type="key">4</Flags>
+				<Type type="key">52</Type>
+				<UniqueID type="key">995991941</UniqueID>
+				<EntityID type="key">{265FBBC4-DA78-4AA3-A9E0-A02CFC4B9080}</EntityID>
+				<ItemInfoDate type="key">26/10/2018 20:03:08</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAddInfoDb type="key"/>
+				<ItemInfoAuthor type="key">NSEE</ItemInfoAuthor>
+			</item>
+		</item>
+	</project>
+	<experiments>
+		<experiment>
+			<Creator type="key">ControlDesk NG</Creator>
+			<Name type="key">Furuta_Model.CDE</Name>
+			<DisplayName type="key">Furuta_Model</DisplayName>
+			<Path type="key">.\Furuta_Model</Path>
+			<Flags type="key">4096</Flags>
+			<Type type="key">2</Type>
+			<UniqueID type="key">633026715</UniqueID>
+			<EntityID type="key">{03B0B1DF-3BF1-4FD7-9D0B-53D3B77EDF9D}</EntityID>
+			<ItemInfoDate type="key">26/10/2018 22:28:39</ItemInfoDate>
+			<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+			<ItemInfoDescr type="key"/>
+			<ItemInfoAddInfoDb type="key"/>
+			<ItemInfoAuthor type="key">NSEE</ItemInfoAuthor>
+		</experiment>
+	</experiments>
+	<UserManager/>
+	<Interpreter/>
+	<VariablesManagement Version="4">
+		<CreatorVersion type="key">503000486</CreatorVersion>
+	</VariablesManagement>
+	<ProjectExperiment>
+		<LastActiveExperiment type="key">Furuta_Model</LastActiveExperiment>
+	</ProjectExperiment>
+	<MeasuredDataNavigator/>
+	<MeasureDataManagement Version="4"/>
+	<Instrumentation Version="1">
+		<UniqueIds Version="3">
+			<Count type="key">2</Count>
+			<File1 type="key">pwm_teste/Layout1</File1>
+			<Id1 type="key">0</Id1>
+			<File2 type="key">Furuta_Model/Layout1</File2>
+			<Id2 type="key">1</Id2>
+		</UniqueIds>
+	</Instrumentation>
+	<DiagnosticsManagement/>
+	<PlatformManagement Version="5"/>
+	<DataSetManager>
+		<Version>
+			<Version type="key">2</Version>
+		</Version>
+		<Work/>
+		<ActiveWork/>
+		<Reference/>
+		<ActiveReference/>
+		<Master/>
+		<ActiveMaster/>
+		<InitialMaster/>
+		<Incomplete/>
+		<IncompleteReadonly/>
+		<DataSet/>
+		<Readonly/>
+		<LabelListFilter>
+			<LabelListFilterFile type="key"/>
+			<LabelListFilterActive type="key">0</LabelListFilterActive>
+		</LabelListFilter>
+		<AutomaticDownload/>
+	</DataSetManager>
+</Root>

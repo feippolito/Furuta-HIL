@@ -1,0 +1,16 @@
+[System]
+Version=2.2
+SystemType=SingleProcessorSystem
+DAQService=DsDAQ
+DsDAQBackground=1
+DAQService=HostService
+Status=Start
+RTP=Master
+
+[Master]
+Type=DS1006
+State=Enabled
+ServiceID=1
+BoardName=unknown
+File=adcteste.x86
+ID=12B4904D-4D9E-458B-8AF2-72A4E4D77E4E

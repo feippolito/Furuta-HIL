@@ -1,0 +1,86 @@
+
+DS_X86_BOARD = 1006;
+
+MIN_HEAP_SIZE    = 0x00070000;
+
+STACK_SIZE       = 0x00080000;
+MIN_HOSTMEM_SIZE = 0x01000000;
+
+DS_HEAP_SIZE     = 0x00010000;
+CONFIG_SIZE      = 0x00040000;
+
+SECTIONS{
+    
+    .text             :
+    {
+        __STEXT = ABSOLUTE(.);
+        *(.text.unlikely .text.*_unlikely)
+        *(.text.exit .text.exit.*)
+        *(.text.startup .text.startup.*)
+        *(.text.hot .text.hot.*)
+        *(.text .stub .text.* .gnu.linkonce.t.*)
+        *(.gnu.warning)
+        __ETEXT = ABSOLUTE(.);
+    }
+    
+    /* Every section between startup and .init was moved behind .text to fix the offset calculation in the message viewer and related tools */    
+    startup           : { *(startup) }    
+    .rel.init         : { *(.rel.init) }
+    .rel.text         : { *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*) }
+    .rel.fini         : { *(.rel.fini) }
+    .rel.rodata       : { *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*) }
+    .rel.data.rel.ro  : { *(.rel.data.rel.ro* .rel.gnu.linkonce.d.rel.ro.*) }
+    .rel.data         : { *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*) }
+    .rel.tdata	      : { *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*) }
+    .rel.tbss	      : { *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*) }
+    .rel.ctors        : { *(.rel.ctors) }
+    .rel.dtors        : { *(.rel.dtors) }
+    .rel.got          : { *(.rel.got) }
+    .rel.bss          : { *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*) }
+    .rel.ifunc        : { *(.rel.ifunc) }
+    
+    .init             :
+    {
+       KEEP (*(.init))
+    }
+    
+    .plt              : { *(.plt) *(.iplt) }    
+    	
+    .fini             : { KEEP (*(.fini)) }
+    
+    initdat           : { *(initdat) }
+    .rodata           : { *(.rodata) }
+    .rodata1          : { *(.rodata1) }
+    .data             : { *(.data) }
+
+    .eh_frame_hdr     : { *(.eh_frame_hdr) }
+    .eh_frame         : ONLY_IF_RO { KEEP (*(.eh_frame)) }	
+    .gcc_except_table : ONLY_IF_RO { *(.gcc_except_table .gcc_except_table.*) }
+
+    .ctors            :
+    {
+        KEEP (*crtbegin.o(.ctors))
+        KEEP (*crtbegin?.o(.ctors))
+        KEEP (*(EXCLUDE_FILE (*crtend.o *crtend?.o ) .ctors))
+        KEEP (*(SORT(.ctors.*)))
+        KEEP (*(.ctors))
+    }
+    .dtors            :
+    {
+        KEEP (*crtbegin.o(.dtors))
+        KEEP (*crtbegin?.o(.dtors))
+        KEEP (*(EXCLUDE_FILE (*crtend.o *crtend?.o ) .dtors))
+        KEEP (*(SORT(.dtors.*)))
+        KEEP (*(.dtors))
+    }
+
+    ioports                     : { *(ioports) }
+    .bss                        : { *(.bss) }
+    config_sect   0x27FF0000    : { *(config_sect) }
+    SlvFwSection  0x30000000    : { *(SlvFwSection) }
+	
+    /DISCARD/ : { *(.group) }
+    /DISCARD/ : { *(.init_array) }
+}
+
+BSSSIZE = SIZEOF(.bss);

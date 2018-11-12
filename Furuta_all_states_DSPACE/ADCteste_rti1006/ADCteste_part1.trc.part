@@ -1,0 +1,163 @@
+-- ******** Model variables ***************************************************
+
+group "Model Root"
+{
+ flags: COLLAPSED
+}
+	group "Constant" -- block-group
+	{
+	 block: "Constant"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		-- Skipping output Out1
+		p_1_ADCteste_real_T_0[0]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Value"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Constant"
+
+	group "Constant1" -- block-group
+	{
+	 block: "Constant"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		-- Skipping output Out1
+		p_1_ADCteste_real_T_0[1]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Value"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Constant1"
+
+	group "Constant2" -- block-group
+	{
+	 block: "Constant"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		-- Skipping output Out1
+		p_1_ADCteste_real_T_0[2]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Value"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Constant2"
+
+	group "Constant3" -- block-group
+	{
+	 block: "Constant"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		-- Skipping output Out1
+		p_1_ADCteste_real_T_0[3]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Value"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Constant3"
+
+  
+  
+	group "DS2202DAC_B1_C1" -- subsystem-group
+	{
+	 flags: COLLAPSED
+	 desc:  ""
+	}
+
+
+	endgroup -- subsystem-group "DS2202DAC_B1_C1"
+  
+  
+	group "DS2202DAC_B1_C2" -- subsystem-group
+	{
+	 flags: COLLAPSED
+	 desc:  ""
+	}
+
+
+	endgroup -- subsystem-group "DS2202DAC_B1_C2"
+  
+  
+	group "DS2202DAC_B1_C3" -- subsystem-group
+	{
+	 flags: COLLAPSED
+	 desc:  ""
+	}
+
+
+	endgroup -- subsystem-group "DS2202DAC_B1_C3"
+  
+  
+	group "DS2202DAC_B1_C4" -- subsystem-group
+	{
+	 flags: COLLAPSED
+	 desc:  ""
+	}
+
+
+	endgroup -- subsystem-group "DS2202DAC_B1_C4"
+  
+  
+	group "DS2202DIO_SETUP_B1" -- subsystem-group
+	{
+	 flags: COLLAPSED
+	 desc:  ""
+	}
+
+
+	endgroup -- subsystem-group "DS2202DIO_SETUP_B1"
+  
+  
+	group "DS2202PWM2D_B1_C2" -- subsystem-group
+	{
+	 flags: COLLAPSED
+	 desc:  ""
+	}
+
+		p_0_ADCteste_real_T_0[0]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Duty Cycle"
+		 desc:    "No data (unused channel) "
+		 flags:   OUTPUT|READONLY
+		}
+		p_0_ADCteste_real_T_0[1]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Period"
+		 desc:    "No data (unused channel) "
+		 flags:   OUTPUT|READONLY
+		}
+
+	endgroup -- subsystem-group "DS2202PWM2D_B1_C2"
+  
+  
+	group "RTI Data" -- subsystem-group
+	{
+	 flags: COLLAPSED
+	 desc:  ""
+	}
+
+
+	endgroup -- subsystem-group "RTI Data"
+
+
+
+
+endgroup -- "Model Root"

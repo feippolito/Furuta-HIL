@@ -1,0 +1,48 @@
+-c "-BC:/Program Files/dSPACE RCPHIL 2014-B/Compiler/X86Tools/BIN"
+-pipe
+-mpreferred-stack-boundary=3
+-march=opteron
+-mtune=opteron
+-msse2
+-mfpmath=sse
+-fno-strict-aliasing
+-fno-common
+-fomit-frame-pointer
+-ffast-math
+-Werror-implicit-function-declaration
+-o
+ADCteste_data.o86
+-O2
+-finline-functions
+-D_INLINE
+-DUSE_RTMODEL
+-DMODEL=ADCteste
+-DMT=0
+-DRT
+-DNUMST=1
+-DNCSTATES=0
+-DTID01EQ=0
+-DNO_PRINTF
+-D_DS1006
+-DRTI_BUILD
+-DRTI_ASSERTION_MODE=RTI_ASSERTION_MODE_OFF
+-DSSTATE=RUN
+-DSMODE=RTSIM
+-DRTT_ENABLE
+-I.
+-I..
+"-IC:/Program Files/dSPACE RCPHIL 2014-B/DS1006/RTPython"
+"-IC:/Program Files/dSPACE RCPHIL 2014-B/Compiler/X86Tools/INCLUDE/NEWLIB"
+"-IC:/Program Files/dSPACE RCPHIL 2014-B/DS1006/RTKernel"
+"-IC:/Program Files/dSPACE RCPHIL 2014-B/DS1006/RTLib"
+"-IC:/Program Files/dSPACE RCPHIL 2014-B/MATLAB/RTI/RTI/C"
+"-IC:/Program Files/dSPACE RCPHIL 2014-B/MATLAB/RTI/RTI/SFcn"
+"-IC:/Program Files/dSPACE RCPHIL 2014-B/MATLAB/RTI/RTI1006/C"
+"-IC:/Program Files/dSPACE RCPHIL 2014-B/MATLAB/RTI/RTI1006/SFcn"
+-IC:/PROGRA~1/MATLAB/R2015a/simulink/include
+-IC:/PROGRA~1/MATLAB/R2015a/extern/include
+-IC:/PROGRA~1/MATLAB/R2015a/rtw/c/src
+-IC:/PROGRA~1/MATLAB/R2015a/rtw/c/src/ext_mode/common
+-IT:/12.01378-0/Furuta/Furuta_mbed/ADCteste_rti1006
+-IT:/12.01378-0/Furuta/Furuta_mbed
+-IT:/12.01378-0/Furuta/ADC-teste 
